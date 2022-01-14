@@ -44,7 +44,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/JoinOT).",
+                        text="Sorry Bruuhh, You are Banned to use me. Contact my [Dev](https://t.me/TeamNezuko).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -52,7 +52,7 @@ async def start(b, m):
             except UserNotParticipant:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
+                    text="**Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -66,17 +66,17 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/JoinOT).",
+                    text="Something went Wrong. Contact my [Devs](https://t.me/TeamNezuko).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='🙋 Hey Bruh!!\nI am Instant Telegram File to Link Generator Bot.\n\nSend me any file & see the magic!',
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton('Bots Channel', url='https://t.me/Discovery_Updates'), InlineKeyboardButton('Support Group', url='https://t.me/JoinOT')],
-                    [InlineKeyboardButton('Developer', url='https://t.me/AbirHasan2005')]
-                ]
+            text='Hi Bruh!!\nI am Instant Telegram File to Link Generator Bot.\n\nSend me any file & see the magic!🔮',
+            #reply_markup=InlineKeyboardMarkup(
+                #[
+                    #[InlineKeyboardButton('Bots Channel', url='https://t.me/*****'), #InlineKeyboardButton('Support Group', url='https://t.me/*****')],
+                    #[InlineKeyboardButton('Developer', url='https://t.me/*******')]
+                #]
             ),
             disable_web_page_preview=True
         )
@@ -87,7 +87,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/JoinOT).",
+                        text="Sorry Bruh, You are Banned to use me. Contact my [Devs](https://t.me/TeamNezuko).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -103,7 +103,7 @@ async def start(b, m):
                             ],
                             [
                                 InlineKeyboardButton("🔄 Refresh / Try Again",
-                                                     url=f"https://t.me/{(await b.get_me()).username}?start=AbirHasan2005_{usr_cmd}")
+                                                     url=f"https://t.me/{(await b.get_me()).username}?start=*********_{usr_cmd}")
                             ]
                         ]
                     ),
@@ -113,7 +113,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/JoinOT).",
+                    text="Something went Wrong. Contact my [Devs](https://t.me/TeamNezuko).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -129,7 +129,7 @@ async def start(b, m):
                                      get_msg.message_id,
                                      file_name)
 
-        msg_text = "Bruh! 😁\nYour Link Generated! 🤓\n\n📂 **File Name:** `{}`\n**File Size:** `{}`\n\n📥 **Download Link:** `{}`"
+        msg_text = "Hey! Your Link Generated!📎 \n\n📂 **File Name:** `{}`\n**File Size:** `{}`\n\n📥 **Download Link:** `{}`"
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
@@ -151,7 +151,7 @@ async def help_handler(bot, message):
             if user.status == "kicked":
                 await bot.send_message(
                     chat_id=message.chat.id,
-                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/JoinOT).",
+                    text="Sorry Bruuh, You are Banned to use me. Contact my [Devs](https://t.me/TeamNezuko).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -159,7 +159,7 @@ async def help_handler(bot, message):
         except UserNotParticipant:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
+                text="**Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -173,7 +173,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/JoinOT).",
+                text="Something went Wrong. Contact my [Devs](https://t.me/TeamNezuko).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -181,10 +181,10 @@ async def help_handler(bot, message):
         text="Send me any File I will provide External Direct Download Link!\n\nAlso I am Supported in Channels. Add me to Channel as Admin to Make Me Workable!",
         parse_mode="Markdown",
         disable_web_page_preview=True,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [InlineKeyboardButton("Support Group", url="https://t.me/JoinOT"), InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-                [InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005")]
-            ]
-        )
+        #reply_markup=InlineKeyboardMarkup(
+            #[
+                #[InlineKeyboardButton("Support Group", url="https://t.me/JoinOT"), #InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
+                #[InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005")]
+            #]
+        #)
     )
