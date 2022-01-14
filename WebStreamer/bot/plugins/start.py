@@ -77,8 +77,8 @@ async def start(b, m):
                     #[InlineKeyboardButton('Bots Channel', url='https://t.me/*****'), #InlineKeyboardButton('Support Group', url='https://t.me/*****')],
                     #[InlineKeyboardButton('Developer', url='https://t.me/*******')]
                 #]
-            ),
-            disable_web_page_preview=True
+            #),
+            #disable_web_page_preview=True
         )
     else:
         if Var.UPDATES_CHANNEL != "None":
