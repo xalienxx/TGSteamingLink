@@ -99,7 +99,7 @@ async def channel_receive_handler(bot, broadcast):
     try:
         log_msg = await broadcast.forward(chat_id=Var.BIN_CHANNEL)
         await log_msg.reply_text(
-            text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel ID:** `{broadcast.chat.id}`\n**Link:** https://t.me/{(await bot.get_me()).username}?start=AbirHasan2005_{str(log_msg.message_id)}",
+            text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel ID:** `{broadcast.chat.id}`\n**Link:** https://t.me/{(await bot.get_me()).username}?start=HunterInc_{str(log_msg.message_id)}",
             quote=True,
             parse_mode="Markdown"
         )
