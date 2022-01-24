@@ -178,7 +178,7 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="Send me any File I will provide External Direct Download Link!\n\nAlso I am Supported in Channels. Add me to Channel as Admin to Make Me Workable!\n\nCheck bot status : https://cutt.ly/JIY88jo [Password: Mikasa]",
+        text="Send/Forward to me any File I will provide External Direct Download Link!\n\nAlso I am Supported in Channels. Add me to Channel as Admin to Make Me Workable!\n\nCheck bot status : https://cutt.ly/JIY88jo [Password: Mikasa]",
         parse_mode="Markdown",
         disable_web_page_preview=True,
         #reply_markup=InlineKeyboardMarkup(
