@@ -71,11 +71,11 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='Hi!!\nI am Instant Telegram File to Link Generator Bot.\nPlease check /help options.\n\nSend/forward to me any file & \nsee the magic!🔮\n\nMaintenance by Hunter 🦅',
+            text='Hi!!\nI am Instant Telegram File to Link Generator Bot.\nPlease check /help options.\n\nSend/forward to me any file & \nsee the magic!🔮\n\nFor Start streaming server use /startbot command \n\nMaintenance by Hunter 🦅',
              reply_markup=InlineKeyboardMarkup(
                  [
                      [InlineKeyboardButton('📌 Devs Channel', url='https://t.me/TeamNezuko')], #InlineKeyboardButton('Support Group', url='https://t.me/*****')],
-                     #[InlineKeyboardButton('Developer', url='https://t.me/*******')]
+                     [InlineKeyboardButton('Developer', url='https://t.me/*******')]
                  ]
              ),
              disable_web_page_preview=True
@@ -178,7 +178,7 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="Send/Forward to me any File I will provide External Direct Download Link!\n\nAlso I am Supported in Channels. Add me to Channel as Admin to Make Me Workable!\n\nCheck bot status : https://cutt.ly/JIY88jo [Password: Mikasa]",
+        text="Send/Forward to me any File I will provide External Direct Download Link!\n\nCheck bot status : https://cutt.ly/JIY88jo [Password: Mikasa]",
         parse_mode="Markdown",
         disable_web_page_preview=True,
         #reply_markup=InlineKeyboardMarkup(
