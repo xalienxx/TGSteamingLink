@@ -1,4 +1,4 @@
-# (c) @EverythingSuckz | @AbirHasan2005
+# (c) @EverythingSuckz | @Fmk
 
 import urllib.parse
 from WebStreamer.bot import StreamBot
@@ -44,7 +44,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Bruuhh, You are Banned to use me. Contact my [Dev](https://t.me/TeamNezuko).",
+                        text="Contact my [Dev](https://t.me/TeamNezuko).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -71,14 +71,14 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='Hi Bruh!!\nI am Instant Telegram File to Link Generator Bot.\n\nSend/forward to me any file & \nsee the magic!🔮\n\nMaintenance by Hunter 🦅',
-            #reply_markup=InlineKeyboardMarkup(
-                #[
-                    #[InlineKeyboardButton('Bots Channel', url='https://t.me/*****'), #InlineKeyboardButton('Support Group', url='https://t.me/*****')],
-                    #[InlineKeyboardButton('Developer', url='https://t.me/*******')]
-                #]
-            #),
-            #disable_web_page_preview=True
+            text='Hi!!\nI am Instant Telegram File to Link Generator Bot.\nPlease check /help options.\n\nSend/forward to me any file & \nsee the magic!🔮\n\nMaintenance by Hunter 🦅',
+             reply_markup=InlineKeyboardMarkup(
+                 [
+                     [InlineKeyboardButton('📌 Devs Channel', url='https://t.me/TeamNezuko'), #InlineKeyboardButton('Support Group', url='https://t.me/*****')],
+                     #[InlineKeyboardButton('Developer', url='https://t.me/*******')]
+                 ]
+             ),
+             disable_web_page_preview=True
         )
     else:
         if Var.UPDATES_CHANNEL != "None":
@@ -129,11 +129,11 @@ async def start(b, m):
                                      get_msg.message_id,
                                      file_name)
 
-        msg_text = "Hey! Your Link Generated!📎 \n\n📂 **File Name:** `{}`\n**File Size:** `{}`\n\n📥 **Download Link:** `{}`"
+        msg_text = "Hey! Your Link Generated!📎 \n\n**File Name:** `{}`\n**File Size:** `{}`\n\n**Download Link:** `{}`"
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Download Now", url=stream_link)]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Download Now!", url=stream_link)]])
         )
 
 
@@ -151,7 +151,7 @@ async def help_handler(bot, message):
             if user.status == "kicked":
                 await bot.send_message(
                     chat_id=message.chat.id,
-                    text="Sorry Bruuh, You are Banned to use me. Contact my [Devs](https://t.me/TeamNezuko).",
+                    text="Contact my [Devs](https://t.me/TeamNezuko).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -184,7 +184,7 @@ async def help_handler(bot, message):
         #reply_markup=InlineKeyboardMarkup(
             #[
                 #[InlineKeyboardButton("Support Group", url="https://t.me/JoinOT"), #InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-                #[InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005")]
+                #[InlineKeyboardButton("Developer", url="https://t.me/TeamNezuko")]
             #]
         #)
     )
