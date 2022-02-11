@@ -71,7 +71,7 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='Hi!!\nI am Instant Telegram File to Link Generator Bot.Please check /help options.\n\nSend/forward to me any file & \nsee the magic!🔮\n\nFor Start streaming server use /startbot command \n\nMaintenance by @XHunterK 🦅 - @TeamNezuko 🇱🇰',
+            text='Hi!!\nI am Instant Telegram File to Link Generator Bot.Please check /help options.\n\nSend/forward to me any file & \nsee the magic!🔮\n\nFor Start streaming server use /startbot command \n\nMaintenance by @XHunterK 🦅 @TeamNezuko 🇱🇰',
              reply_markup=InlineKeyboardMarkup(
                  [
                      [InlineKeyboardButton('📌 Devs Channel', url='https://t.me/TeamNezuko')], #InlineKeyboardButton('Support Group', url='https://t.me/*****')],
