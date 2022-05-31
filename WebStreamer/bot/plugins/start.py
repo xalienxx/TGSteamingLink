@@ -71,7 +71,7 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='Mikasa Server 3 Connected./nPlease check /help options.\n\nMaintenance by @XHunterK 🦅 @TeamNezuko 🇱🇰/n/n22-5-31 Pinging Started...',
+            text='Mikasa Server 3 Connected./nPlease check /help options.\n\nMaintenance by @XHunterK 🦅 @TeamNezuko 🇱🇰 /n/n 22-5-31 Pinging Started...',
              reply_markup=InlineKeyboardMarkup(
                  [
                      #[InlineKeyboardButton('📌 Devs Channel', url='https://t.me/TeamNezuko')], #InlineKeyboardButton('Support Group', url='https://t.me/*****')],
